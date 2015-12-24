@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>astro.ifweassume</title>
+ <link href="http://astro.ifweassume.com/atom.xml" rel="self"/>
+ <link href="http://astro.ifweassume.com/"/>
+ <updated>2015-12-23T23:23:34-08:00</updated>
+ <id>http://astro.ifweassume.com</id>
+ <author>
+   <name>James R. A. Davenport</name>
+   <!-- <email></email> -->
+ </author>
+
+ 
+ <entry>
+   <title>How would a giant planet affect binary star evolution?</title>
+   <link href="http://astro.ifweassume.com/2015/12/15/planets-binaries/"/>
+   <updated>2015-12-15T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.com/2015/12/15/planets-binaries</id>
+   <content type="html">&lt;p&gt;There’s a problem with making short period (like, 0.2 day) M dwarf binaries. They take too long to form starting from relatively close binaries (e.g. 2 day), like…  a Hubble time to lose angular momentum. Yet, we see &lt;a href=&quot;http://arxiv.org/abs/1206.6056&quot;&gt;many systems&lt;/a&gt; like this.&lt;/p&gt;
+
+&lt;p&gt;Most people seem to care right now about how binary stars will affect planet evolution (e.g. ejecting planets from systems).&lt;/p&gt;
+
+&lt;p&gt;3rd body interactions have always been a popular culprit for forming such tight binaries. Galactic tidal influence might be able to do it too… but that’s usually thought about for &lt;a href=&quot;http://arxiv.org/abs/1301.3145&quot;&gt;wide binaries&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So the idea:
+Get best “Nbody model” (see my ignorance in its raw form!) of binary star system, with moderate separations (like, 1-10 days). Add a giant planet around 1 star. Run lots of simulations for 1 Gyr&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Project Dust Storm</title>
+   <link href="http://astro.ifweassume.com/2015/12/13/duststorm/"/>
+   <updated>2015-12-13T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.com/2015/12/13/duststorm</id>
+   <content type="html">&lt;p&gt;Can we see dust move? Extinction changing with time?&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Hack Day Idea - Kepler FFI's</title>
+   <link href="http://astro.ifweassume.com/2015/12/04/hackidea2016/"/>
+   <updated>2015-12-04T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.com/2015/12/04/hackidea2016</id>
+   <content type="html">&lt;p&gt;These images have been largely ignored, though the opinion of the community has been that if the right question were posed they would be a gold mine.&lt;/p&gt;
+
+&lt;p&gt;I don’t have the perfect question, but I have a few mediocre ones:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Can we find transients in the Kepler FFI’s?&lt;/li&gt;
+  &lt;li&gt;Can we find new eclipsing binaries or pulsators (use supersmoother, like w/ S82 work) using the FFI’s?&lt;/li&gt;
+  &lt;li&gt;Can we find stars with long term variability (e.g. LPVs, YSOs) using the FFI’s?&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Images are here:
+https://archive.stsci.edu/pub/kepler/ffi/&lt;/p&gt;
+
+&lt;p&gt;These transients could be from Novae/SuperNovae, or flares, or asteroids (less likely given 30min cadence)&lt;/p&gt;
+
+&lt;p&gt;A first-pass was done as an REU project years ago:
+http://physics.nd.edu/assets/45942/vande_kolk_bryant.pdf&lt;/p&gt;
+
+&lt;p&gt;And this is the only real result in the literature using FFI’s I’m aware of:
+http://arxiv.org/pdf/1107.0297.pdf&lt;/p&gt;
+
+&lt;p&gt;There are 53 of these images, w/ 30min exposures each, and an area of ~100 sq deg. While this pales in comparison to the data from the Kepler targeted objects, it is actually not a shabby time series catalog. Stripe 82 had an area of ~300 sq deg and 70-90 exposures…
+http://arxiv.org/abs/1405.7382&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How many eclipsing binaries in an open cluster?</title>
+   <link href="http://astro.ifweassume.com/2015/11/15/binaries-in-clusters/"/>
+   <updated>2015-11-15T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.com/2015/11/15/binaries-in-clusters</id>
+   <content type="html">&lt;p&gt;This is a simple question I’ve been interested in for a long time: Given excellent statistics about the stars we see in an open cluster, how many eclipsing binaries should we observe in a given dataset (e.g. Kepler)?&lt;/p&gt;
+
+&lt;p&gt;Given excellent observations of a cluster, we can constrain the properties of binaries.
+The parameters to fit would be the total binary fraction and the mass ratio distribution (maybe could be described using a slope or something).&lt;/p&gt;
+
+&lt;p&gt;An older cluster’s dynamical/tidal history through the Galaxy should affect it’s binary population. This might be an interesting way to constrain that history versus field stars. Or versus young clusters.&lt;/p&gt;
+
+&lt;p&gt;Other Cluster / EB ideas:
+It would be nice to have a definitive “Catalog of Variable Stars in M67” based on every available time domain dataset.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;K2&lt;/li&gt;
+  &lt;li&gt;2MASS Cal-PSWDB&lt;/li&gt;
+  &lt;li&gt;LINEAR&lt;/li&gt;
+  &lt;li&gt;Catalina&lt;/li&gt;
+  &lt;li&gt;several one-off datasets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Seems like a great hack-day idea too, doing really crappy forward or Monte Carlo model of what you should see, taking in best guesses for everything&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Recover Differential Rotation using ML?</title>
+   <link href="http://astro.ifweassume.com/2015/11/14/diffrot-ml/"/>
+   <updated>2015-11-14T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.com/2015/11/14/diffrot-ml</id>
+   <content type="html">&lt;p&gt;We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.&lt;/p&gt;
+
+&lt;p&gt;The most promising approaches revolved around studying the power spectrum or periodogram. The main peak (due to rotation) would be broadened or split.&lt;/p&gt;
+
+&lt;p&gt;However, this signature can also be caused by starspot decay and evolution, or the appearance of many spots, even without any differential rotation in our model (alpha).&lt;/p&gt;
+
+&lt;p&gt;I hypothesized that the periodogram peak structure might be able to recover some type of combined parameter that includes many of these degenerate stellar properties. Perhaps this would be enough information to be useful to theorists?&lt;/p&gt;
+
+&lt;p&gt;My attempts to find such a “starspot evolution parameter” based on the peak broadening in the periodogram has not shown any correlation with simulated properties from the Aigrain model light curves. I also tried a simple Random Forest regression of the peak width (and width relative to the period) versus every simulated property for all 1000 light curves. Nada&lt;/p&gt;
+
+&lt;p&gt;So the question/idea is: can we invert the problem, do machine learning on the power spectrum or periodogram itself to try and learn what the features of interest are? A giant amount of simulated light curves (even just using a super crappy evolving sine-curve code) would be helpful to tease out results….&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How many halo stars are in Kepler?</title>
+   <link href="http://astro.ifweassume.com/2015/11/13/halostars-in-kepler/"/>
+   <updated>2015-11-13T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.com/2015/11/13/halostars-in-kepler</id>
+   <content type="html">&lt;p&gt;There should be a small number of stars in the Kepler (and K2) data that belong to the halo, just based on their dynamics.&lt;/p&gt;
+
+&lt;p&gt;It might be interesting to find them!&lt;/p&gt;
+
+&lt;p&gt;These would have systematically older ages, and would be useful for stretching our gyrochronology methods.
+https://twitter.com/kantyellow/status/611463847610818561&lt;/p&gt;
+
+&lt;p&gt;It looks like Sebastian Lepine has already written a K2 proposal on this.
+http://keplerscience.arc.nasa.gov/K2/docs/Campaigns/C1/GO1061_Lepine.pdf&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

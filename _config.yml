@@ -1,0 +1,22 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               astro.ifweassume
+tagline:             ''
+description:         'A place for ideas, ramblings, and notes on things astronomical'
+url:                 http://astro.ifweassume.com
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              James R. A. Davenport
+  url:               https://twitter.com/jradavenport
+  # email:
+
+# Custom vars
+# version:             1.0.0
