@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2016-01-07T14:51:41-05:00</updated>
+ <updated>2016-01-24T20:14:48-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Flux calibration in TESS</title>
    <link href="http://astro.ifweassume.com/2016/01/07/fluxcal-in-tess/"/>
-   <updated>2016-01-07T00:00:00-05:00</updated>
+   <updated>2016-01-07T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2016/01/07/fluxcal-in-tess</id>
    <content type="html">&lt;p&gt;TESS will take (and save) Full Frame Images at 30 minute cadence for their entire mission. However, like Kepler (and K2), the TESS pipeline will provide a differential photometry data product. i.e. the data is &lt;em&gt;not&lt;/em&gt; flux calibrated.&lt;/p&gt;
 
@@ -23,13 +23,25 @@
 
 &lt;p&gt;The question I see (and without enough knowledge of the TESS detector and hardware) is this:
 &lt;strong&gt;What are the calibration frames that are required to do this?&lt;/strong&gt;. Put another way, what &lt;em&gt;could&lt;/em&gt; Kepler have done to accomplish this?&lt;/p&gt;
+
+&lt;h3 id=&quot;some-relevant-literature&quot;&gt;Some relevant literature:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2010ApJ...713L..97B&quot;&gt;Bryson et al. (2010)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://adsabs.harvard.edu/abs/2013arXiv1309.0653H&quot;&gt;Hogg et al. (2013)&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;and associated GitHub &lt;a href=&quot;https://github.com/davidwhogg/SaveKepler&quot;&gt;repository&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://arxiv.org/abs/1601.04052&quot;&gt;Stubbs et al. (2016)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
  <entry>
    <title>How would a giant planet affect binary star evolution?</title>
    <link href="http://astro.ifweassume.com/2015/12/15/planets-binaries/"/>
-   <updated>2015-12-15T00:00:00-05:00</updated>
+   <updated>2015-12-15T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2015/12/15/planets-binaries</id>
    <content type="html">&lt;p&gt;There’s a problem with making short period (like, 0.2 day) M dwarf binaries. They take too long to form starting from relatively close binaries (e.g. 2 day), like…  a Hubble time to lose angular momentum. Yet, we see &lt;a href=&quot;http://arxiv.org/abs/1206.6056&quot;&gt;many systems&lt;/a&gt; like this.&lt;/p&gt;
 
@@ -45,7 +57,7 @@ Get best “Nbody model” (see my ignorance in its raw form!) of binary star sy
  <entry>
    <title>Project Dust Storm</title>
    <link href="http://astro.ifweassume.com/2015/12/13/duststorm/"/>
-   <updated>2015-12-13T00:00:00-05:00</updated>
+   <updated>2015-12-13T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2015/12/13/duststorm</id>
    <content type="html">&lt;p&gt;Can we see dust move? Extinction changing with time?&lt;/p&gt;
 </content>
@@ -54,7 +66,7 @@ Get best “Nbody model” (see my ignorance in its raw form!) of binary star sy
  <entry>
    <title>Hack Day Idea - Kepler FFI's</title>
    <link href="http://astro.ifweassume.com/2015/12/04/hackidea2016/"/>
-   <updated>2015-12-04T00:00:00-05:00</updated>
+   <updated>2015-12-04T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2015/12/04/hackidea2016</id>
    <content type="html">&lt;p&gt;These images have been largely ignored, though the opinion of the community has been that if the right question were posed they would be a gold mine.&lt;/p&gt;
 
@@ -85,7 +97,7 @@ http://arxiv.org/abs/1405.7382&lt;/p&gt;
  <entry>
    <title>How many eclipsing binaries in an open cluster?</title>
    <link href="http://astro.ifweassume.com/2015/11/15/binaries-in-clusters/"/>
-   <updated>2015-11-15T00:00:00-05:00</updated>
+   <updated>2015-11-15T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2015/11/15/binaries-in-clusters</id>
    <content type="html">&lt;p&gt;This is a simple question I’ve been interested in for a long time: Given excellent statistics about the stars we see in an open cluster, how many eclipsing binaries should we observe in a given dataset (e.g. Kepler)?&lt;/p&gt;
 
@@ -112,7 +124,7 @@ It would be nice to have a definitive “Catalog of Variable Stars in M67” bas
  <entry>
    <title>Recover Differential Rotation using ML?</title>
    <link href="http://astro.ifweassume.com/2015/11/14/diffrot-ml/"/>
-   <updated>2015-11-14T00:00:00-05:00</updated>
+   <updated>2015-11-14T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2015/11/14/diffrot-ml</id>
    <content type="html">&lt;p&gt;We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.&lt;/p&gt;
 
@@ -131,7 +143,7 @@ It would be nice to have a definitive “Catalog of Variable Stars in M67” bas
  <entry>
    <title>How many halo stars are in Kepler?</title>
    <link href="http://astro.ifweassume.com/2015/11/13/halostars-in-kepler/"/>
-   <updated>2015-11-13T00:00:00-05:00</updated>
+   <updated>2015-11-13T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2015/11/13/halostars-in-kepler</id>
    <content type="html">&lt;p&gt;There should be a small number of stars in the Kepler (and K2) data that belong to the halo, just based on their dynamics.&lt;/p&gt;
 
