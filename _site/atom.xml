@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2016-01-25T10:28:03-08:00</updated>
+ <updated>2016-01-25T10:34:01-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -63,18 +63,23 @@ Get best “Nbody model” (see my ignorance in its raw form!) of binary star sy
 
 &lt;p&gt;There are 2 ways to approach this problem:&lt;/p&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;Direct observation
- a. requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps
- b. most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.
- c. most IR surveys do not have the required resolution, but future missions would
- d. radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM
- e. gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM&lt;/li&gt;
-  &lt;li&gt;Variations of extinction, E(B-V)
- a. probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving
- b. gives less specific detail on the motions of the ISM relative to the Sun
- c. does give info on the density structure of the ISM on potentially very small scales&lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;direct-observation&quot;&gt;1. Direct observation&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps&lt;/li&gt;
+  &lt;li&gt;most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.&lt;/li&gt;
+  &lt;li&gt;most IR surveys do not have the required resolution, but future missions would&lt;/li&gt;
+  &lt;li&gt;radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM&lt;/li&gt;
+  &lt;li&gt;gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;variations-of-extinction-eb-v&quot;&gt;2. Variations of extinction, E(B-V)&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving&lt;/li&gt;
+  &lt;li&gt;gives less specific detail on the motions of the ISM relative to the Sun&lt;/li&gt;
+  &lt;li&gt;does give info on the density structure of the ISM on potentially very small scales&lt;/li&gt;
+&lt;/ul&gt;
 </content>
  </entry>
  
