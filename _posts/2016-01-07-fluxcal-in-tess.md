@@ -15,5 +15,5 @@ The question I see (and without enough knowledge of the TESS detector and hardwa
 
 - [Bryson et al. (2010)](http://adsabs.harvard.edu/abs/2010ApJ...713L..97B)
 - [Hogg et al. (2013)](http://adsabs.harvard.edu/abs/2013arXiv1309.0653H)
-    - and associated GitHub [repository](https://github.com/davidwhogg/SaveKepler)
+  - and associated GitHub [repository](https://github.com/davidwhogg/SaveKepler)
 - [Stubbs et al. (2016)](http://arxiv.org/abs/1601.04052)
