@@ -24,3 +24,4 @@ There are 2 ways to approach this problem:
 - probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving
 - gives less specific detail on the motions of the ISM relative to the Sun
 - does give info on the density structure of the ISM on potentially very small scales
+- people have started to compare dust extinction maps, e.g. [Planck vs WISE](http://arxiv.org/abs/1409.2495) which may be a way forward

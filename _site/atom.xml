@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2016-01-25T10:34:01-08:00</updated>
+ <updated>2016-02-26T09:44:56-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -79,6 +79,7 @@ Get best “Nbody model” (see my ignorance in its raw form!) of binary star sy
   &lt;li&gt;probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving&lt;/li&gt;
   &lt;li&gt;gives less specific detail on the motions of the ISM relative to the Sun&lt;/li&gt;
   &lt;li&gt;does give info on the density structure of the ISM on potentially very small scales&lt;/li&gt;
+  &lt;li&gt;people have started to compare dust extinction maps, e.g. &lt;a href=&quot;http://arxiv.org/abs/1409.2495&quot;&gt;Planck vs WISE&lt;/a&gt; which may be a way forward&lt;/li&gt;
 &lt;/ul&gt;
 </content>
  </entry>
