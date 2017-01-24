@@ -2,7 +2,6 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
 title:               astro.ifweassume
@@ -10,7 +9,7 @@ tagline:             ''
 description:         'A place for ideas, ramblings, and notes on things astronomical'
 url:                 http://astro.ifweassume.com
 baseurl:             'http://astro.ifweassume.com'
-paginate:            5
+paginate:            3
 
 # About/contact
 author:
@@ -20,3 +19,7 @@ author:
 
 # Custom vars
 # version:             1.0.0
+
+# Gems
+gems: [jekyll-paginate]
+paginate_path: "page:num"
