@@ -11,7 +11,7 @@
 
   <title>
     
-      Recover Differential Rotation using ML? &middot; astro.ifweassume
+      Distribution of Eclipsing Binaries in the SMC and LMC &middot; astro.ifweassume
     
   </title>
 
@@ -105,19 +105,17 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Recover Differential Rotation using ML?</h1>
-  <span class="post-date">14 Nov 2015</span>
-  <p>We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.</p>
+  <h1 class="post-title">Distribution of Eclipsing Binaries in the SMC and LMC</h1>
+  <span class="post-date">24 Feb 2017</span>
+  <p>There are some <em>awesome</em> surveys of variability that are being under utilized. One such gem is OGLE, which now has a <a href="https://arxiv.org/abs/1612.06394">catalog of over 48k</a> eclipsing binary star systems in the SMC and LMC!</p>
 
-<p>The most promising approaches revolved around studying the power spectrum or periodogram. The main peak (due to rotation) would be broadened or split.</p>
+<p>With such a large sample, and near complete coverage of SMC/LMC (and in-between….) it would be amazing to see: <strong>are there variations of the eclipsing binary star population over an entire galaxy?</strong></p>
 
-<p>However, this signature can also be caused by starspot decay and evolution, or the appearance of many spots, even without any differential rotation in our model (alpha).</p>
+<p>To do so, you might combine this variability survey with other spatial surveys that have traced the <a href="https://arxiv.org/abs/0908.1422">star formation history</a> of the LMC/SMC… here’s a more <a href="https://arxiv.org/abs/1501.05347">recent paper</a> on the subject!</p>
 
-<p>I hypothesized that the periodogram peak structure might be able to recover some type of combined parameter that includes many of these degenerate stellar properties. Perhaps this would be enough information to be useful to theorists?</p>
+<p>We (or at least I) might naively expect that the orbital period distribution would be changed as a function of mean age of the stars in a spatial bin - in other words, dynamic processing would harden (shorten) the periods over time. Long period, detached systems would become more rare over time, and so also increasing the fraction of W UMa type systems.</p>
 
-<p>My attempts to find such a “starspot evolution parameter” based on the peak broadening in the periodogram has not shown any correlation with simulated properties from the Aigrain model light curves. I also tried a simple Random Forest regression of the peak width (and width relative to the period) versus every simulated property for all 1000 light curves. Nada</p>
-
-<p>So the question/idea is: can we invert the problem, do machine learning on the power spectrum or periodogram itself to try and learn what the features of interest are? A giant amount of simulated light curves (even just using a super crappy evolving sine-curve code) would be helpful to tease out results….</p>
+<p>Finally, working in the temporal-spatial domain is good practice for the forthcoming “LSST era”. As they say, publish early, publish often!</p>
 
 </div>
 
@@ -145,9 +143,9 @@
     
       <li>
         <h3>
-          <a href="http://astro.ifweassume.com/2017/02/24/EB-LMC/">
-            Distribution of Eclipsing Binaries in the SMC and LMC
-            <small>24 Feb 2017</small>
+          <a href="http://astro.ifweassume.com/2016/01/07/fluxcal-in-tess/">
+            Flux calibration in TESS
+            <small>07 Jan 2016</small>
           </a>
         </h3>
       </li>

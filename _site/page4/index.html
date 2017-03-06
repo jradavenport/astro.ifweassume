@@ -11,7 +11,7 @@
 
   <title>
     
-      Recover Differential Rotation using ML? &middot; astro.ifweassume
+      astro.ifweassume &middot; 
     
   </title>
 
@@ -104,56 +104,42 @@
       </div>
 
       <div class="container content">
-        <div class="post">
-  <h1 class="post-title">Recover Differential Rotation using ML?</h1>
-  <span class="post-date">14 Nov 2015</span>
-  <p>We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.</p>
+        <div class="posts">
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://astro.ifweassume.com//2015/11/13/halostars-in-kepler/">
+        How many halo stars are in Kepler?
+      </a>
+    </h1>
 
-<p>The most promising approaches revolved around studying the power spectrum or periodogram. The main peak (due to rotation) would be broadened or split.</p>
+    <span class="post-date">13 Nov 2015</span>
 
-<p>However, this signature can also be caused by starspot decay and evolution, or the appearance of many spots, even without any differential rotation in our model (alpha).</p>
+    <p>There should be a small number of stars in the Kepler (and K2) data that belong to the halo, just based on their dynamics.</p>
 
-<p>I hypothesized that the periodogram peak structure might be able to recover some type of combined parameter that includes many of these degenerate stellar properties. Perhaps this would be enough information to be useful to theorists?</p>
+<p>It might be interesting to find them!</p>
 
-<p>My attempts to find such a “starspot evolution parameter” based on the peak broadening in the periodogram has not shown any correlation with simulated properties from the Aigrain model light curves. I also tried a simple Random Forest regression of the peak width (and width relative to the period) versus every simulated property for all 1000 light curves. Nada</p>
+<p>These would have systematically older ages, and would be useful for stretching our gyrochronology methods.
+https://twitter.com/kantyellow/status/611463847610818561</p>
 
-<p>So the question/idea is: can we invert the problem, do machine learning on the power spectrum or periodogram itself to try and learn what the features of interest are? A giant amount of simulated light curves (even just using a super crappy evolving sine-curve code) would be helpful to tease out results….</p>
+<p>It looks like Sebastian Lepine has already written a K2 proposal on this.
+http://keplerscience.arc.nasa.gov/K2/docs/Campaigns/C1/GO1061_Lepine.pdf</p>
 
+  </div>
+  
 </div>
 
-<!-- <div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
+<div class="pagination">
+  
+    <span class="pagination-item older">Older</span>
+  
+  
     
-      <li>
-        <h3>
-          <a href="http://astro.ifweassume.com/2017/03/06/galex/">
-            Stellar activity with GALEX
-            <small>06 Mar 2017</small>
-          </a>
-        </h3>
-      </li>
+      <a class="pagination-item newer" href="http://astro.ifweassume.com/page3">Newer</a>
     
-      <li>
-        <h3>
-          <a href="http://astro.ifweassume.com/2017/02/25/occult/">
-            Lunar Occultations of K2 Stars
-            <small>25 Feb 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-      <li>
-        <h3>
-          <a href="http://astro.ifweassume.com/2017/02/24/EB-LMC/">
-            Distribution of Eclipsing Binaries in the SMC and LMC
-            <small>24 Feb 2017</small>
-          </a>
-        </h3>
-      </li>
-    
-  </ul>
-</div> -->
+  
+</div>
+
 
       </div>
     </div>

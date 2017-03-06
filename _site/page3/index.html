@@ -16,14 +16,14 @@
   </title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="http://astro.ifweassume.com/public/css/poole.css">
+  <link rel="stylesheet" href="http://astro.ifweassume.com/public/css/syntax.css">
+  <link rel="stylesheet" href="http://astro.ifweassume.com/public/css/lanyon.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://astro.ifweassume.com/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="http://astro.ifweassume.com/public/favicon.ico">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
@@ -43,7 +43,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item" href="/">Home</a>
+    <a class="sidebar-nav-item" href="http://astro.ifweassume.com/">Home</a>
 
     
 
@@ -63,6 +63,10 @@
         
       
     
+      
+    
+      
+        
       
     
       
@@ -93,7 +97,7 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="/" title="Home">astro.ifweassume</a>
+            <a href="http://astro.ifweassume.com/" title="Home">astro.ifweassume</a>
             <small></small>
           </h3>
         </div>
@@ -104,22 +108,90 @@
   
   <div class="post">
     <h1 class="post-title">
-      <a href="//2015/11/13/halostars-in-kepler/">
-        How many halo stars are in Kepler?
+      <a href="http://astro.ifweassume.com//2015/12/04/hackidea2016/">
+        Hack Day Idea - Kepler FFI's
       </a>
     </h1>
 
-    <span class="post-date">13 Nov 2015</span>
+    <span class="post-date">04 Dec 2015</span>
 
-    <p>There should be a small number of stars in the Kepler (and K2) data that belong to the halo, just based on their dynamics.</p>
+    <p>These images have been largely ignored, though the opinion of the community has been that if the right question were posed they would be a gold mine.</p>
 
-<p>It might be interesting to find them!</p>
+<p>I don’t have the perfect question, but I have a few mediocre ones:</p>
 
-<p>These would have systematically older ages, and would be useful for stretching our gyrochronology methods.
-https://twitter.com/kantyellow/status/611463847610818561</p>
+<ol>
+  <li>Can we find transients in the Kepler FFI’s?</li>
+  <li>Can we find new eclipsing binaries or pulsators (use supersmoother, like w/ S82 work) using the FFI’s?</li>
+  <li>Can we find stars with long term variability (e.g. LPVs, YSOs) using the FFI’s?</li>
+</ol>
 
-<p>It looks like Sebastian Lepine has already written a K2 proposal on this.
-http://keplerscience.arc.nasa.gov/K2/docs/Campaigns/C1/GO1061_Lepine.pdf</p>
+<p>Images are here:
+https://archive.stsci.edu/pub/kepler/ffi/</p>
+
+<p>These transients could be from Novae/SuperNovae, or flares, or asteroids (less likely given 30min cadence)</p>
+
+<p>A first-pass was done as an REU project years ago:
+http://physics.nd.edu/assets/45942/vande_kolk_bryant.pdf</p>
+
+<p>And this is the only real result in the literature using FFI’s I’m aware of:
+http://arxiv.org/pdf/1107.0297.pdf</p>
+
+<p>There are 53 of these images, w/ 30min exposures each, and an area of ~100 sq deg. While this pales in comparison to the data from the Kepler targeted objects, it is actually not a shabby time series catalog. Stripe 82 had an area of ~300 sq deg and 70-90 exposures…
+http://arxiv.org/abs/1405.7382</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://astro.ifweassume.com//2015/11/15/binaries-in-clusters/">
+        How many eclipsing binaries in an open cluster?
+      </a>
+    </h1>
+
+    <span class="post-date">15 Nov 2015</span>
+
+    <p>This is a simple question I’ve been interested in for a long time: Given excellent statistics about the stars we see in an open cluster, how many eclipsing binaries should we observe in a given dataset (e.g. Kepler)?</p>
+
+<p>Given excellent observations of a cluster, we can constrain the properties of binaries.
+The parameters to fit would be the total binary fraction and the mass ratio distribution (maybe could be described using a slope or something).</p>
+
+<p>An older cluster’s dynamical/tidal history through the Galaxy should affect it’s binary population. This might be an interesting way to constrain that history versus field stars. Or versus young clusters.</p>
+
+<p>Other Cluster / EB ideas:
+It would be nice to have a definitive “Catalog of Variable Stars in M67” based on every available time domain dataset.</p>
+
+<ul>
+  <li>K2</li>
+  <li>2MASS Cal-PSWDB</li>
+  <li>LINEAR</li>
+  <li>Catalina</li>
+  <li>several one-off datasets</li>
+</ul>
+
+<p>Seems like a great hack-day idea too, doing really crappy forward or Monte Carlo model of what you should see, taking in best guesses for everything</p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://astro.ifweassume.com//2015/11/14/diffrot-ml/">
+        Recover Differential Rotation using ML?
+      </a>
+    </h1>
+
+    <span class="post-date">14 Nov 2015</span>
+
+    <p>We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.</p>
+
+<p>The most promising approaches revolved around studying the power spectrum or periodogram. The main peak (due to rotation) would be broadened or split.</p>
+
+<p>However, this signature can also be caused by starspot decay and evolution, or the appearance of many spots, even without any differential rotation in our model (alpha).</p>
+
+<p>I hypothesized that the periodogram peak structure might be able to recover some type of combined parameter that includes many of these degenerate stellar properties. Perhaps this would be enough information to be useful to theorists?</p>
+
+<p>My attempts to find such a “starspot evolution parameter” based on the peak broadening in the periodogram has not shown any correlation with simulated properties from the Aigrain model light curves. I also tried a simple Random Forest regression of the peak width (and width relative to the period) versus every simulated property for all 1000 light curves. Nada</p>
+
+<p>So the question/idea is: can we invert the problem, do machine learning on the power spectrum or periodogram itself to try and learn what the features of interest are? A giant amount of simulated light curves (even just using a super crappy evolving sine-curve code) would be helpful to tease out results….</p>
 
   </div>
   
@@ -127,11 +199,11 @@ http://keplerscience.arc.nasa.gov/K2/docs/Campaigns/C1/GO1061_Lepine.pdf</p>
 
 <div class="pagination">
   
-    <span class="pagination-item older">Older</span>
+    <a class="pagination-item older" href="http://astro.ifweassume.com/page4">Older</a>
   
   
     
-      <a class="pagination-item newer" href="/page2">Newer</a>
+      <a class="pagination-item newer" href="http://astro.ifweassume.com/page2">Newer</a>
     
   
 </div>
