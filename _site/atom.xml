@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-03-06T12:11:53-08:00</updated>
+ <updated>2017-03-06T12:12:57-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -32,7 +32,7 @@
 2. Compare the gPhoton with SQL-level data, to ensure variability is real
 3. Compare with the &lt;a href=&quot;http://adsabs.harvard.edu/abs/2013ApJ...766...60G&quot;&gt;Gezari et al. (2013)&lt;/a&gt; catalog of variable GALEX sources&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/jradavenport/GALEX_MtWilson&quot;&gt;Python notebook on Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/jradavenport/GALEX_MtWilson/blob/master/tmp.ipynb&quot;&gt;Python notebook on Github&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;age-activity&quot;&gt;Age-Activity&lt;/h2&gt;
 
