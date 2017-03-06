@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-03-06T08:16:45-08:00</updated>
+ <updated>2017-03-06T11:54:08-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -17,7 +17,37 @@
    <link href="http://astro.ifweassume.com/2017/03/06/galex/"/>
    <updated>2017-03-06T00:00:00-08:00</updated>
    <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2017/03/06/galex</id>
-   <content type="html">&lt;p&gt;some cool figures from ISSI meeting, w/ thanks to Scott Flemming &amp;amp; Rachel Osten&lt;/p&gt;
+   <content type="html">&lt;p&gt;At the &lt;a href=&quot;http://www.issibern.ch/teams/quasistellflare/&quot;&gt;ISSI meeting&lt;/a&gt; I attended on quasi-periodic pulsations (QPP’s) in stellar flares in Switzerland in 2017-March, we had a great demo of the time-tagged photon data from GALEX by Scott Flemming &amp;amp; Rachel Osten, and the Python toolkit called &lt;a href=&quot;https://github.com/cmillion/gPhoton&quot;&gt;gPhoton&lt;/a&gt;. This enables high time resolution (maybe 1sec) studies of stellar variability in the NUV (and FUV). Many projects came to mind from our group with this tool/dataset, including searching for QPP’s naturally.&lt;/p&gt;
+
+&lt;h2 id=&quot;long-term-variability&quot;&gt;Long-Term Variability&lt;/h2&gt;
+&lt;p&gt;Some sources available with gPhoton have data from up to 10 years of repeated visits with GALEX! This caused me to wonder about the possibility of seeing long time-scale variability in the UV, which we might use to observe stellar activity cycles using GALEX! By using a list of Mt. Wilson H&amp;amp;K stars from &lt;a href=&quot;http://adsabs.harvard.edu/abs/1991ApJS...76..383D&quot;&gt;Duncan et al. (1991)&lt;/a&gt;, I wrote a quick Python script to ping the gPhoton database and count how many visits to each star were available.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;After corresponding with the gPhoton folks, it seems this may be a less efficient approach, and that an SQL-style database is also available for visit-level data that may suffice. Comparison of gPhoton with this coarser data is required!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is the decade long light curve for one star, chosen to have the largest number of visits available (over 70). Each data point is the median flux value within the visit. The evolution is very interesting!
+&lt;img src=&quot;http://astro.ifweassume.com/assets/HD_3765.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;
+1. Create a similar light curve for every Mt. Wilson (and other H&amp;amp;K survey) stars, looking for long-term variations.
+2. Compare the gPhoton with SQL-level data, to ensure variability is real&lt;/p&gt;
+
+&lt;h2 id=&quot;age-activity&quot;&gt;Age-Activity&lt;/h2&gt;
+
+&lt;p&gt;Following my recent exploration of rotation period distributions using &lt;a href=&quot;https://arxiv.org/abs/1610.08563&quot;&gt;Kepler &amp;amp; Gaia data&lt;/a&gt;, I was keen to see if the GALEX data showed any correlation between UV flux and stellar age. Activity levels traced versus stellar age with GALEX have been explored by &lt;a href=&quot;http://adsabs.harvard.edu/abs/2014AJ....148...64S&quot;&gt;Shkolnik &amp;amp; Barman (2014)&lt;/a&gt;, using stars with known ages from clusters.&lt;/p&gt;
+
+&lt;p&gt;Instead of gPhoton, I used a dedicated dataset built from GALEX observations of the Kepler field by &lt;a href=&quot;http://adsabs.harvard.edu/abs/2015ApJ...813..100O&quot;&gt;Olmedo et al. (2015)&lt;/a&gt;. Using the excellent CDS X Match Service, I quickly and effortlessly matched this catalog to the &lt;a href=&quot;http://adsabs.harvard.edu/abs/2014ApJS..211...24M&quot;&gt;McQuillan et al. (2014)&lt;/a&gt; rotation period dataset. To get more photometry, I then matched &lt;em&gt;this&lt;/em&gt; combined catalog to SIMBAD with X Match. In a matter of 30 minutes from the airport I was able to get the data to make this figure:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://astro.ifweassume.com/assets/galex_rot_test2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For stars with a small range of temperatures, we can see the NUV flux appears to decrease compared to the V-band as a function of rotation period. Here I use the NUV-V color, as it is distance independent, and small bins in temperature to minimize the effect of different stars inhabiting different ranges of rotation period causing artificial spreads in the color. The evolution of less UV activity with increasing age (rotation period) is in the direction that is expected. However, the scatter is quite large.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;
+1. Improve sample selection with quality cuts for all data.
+2. Make similar plot for all available temperature bins
+3. Make plot as a function of Rossby number instead of rotation period
+4. Using a gyrochronology relation to infer rotation ages, plot the &lt;em&gt;expected&lt;/em&gt; UV flux (or NUV-V color) from the fits of Shkolnik &amp;amp; Barman (2014) versus the GALEX data.
+5. Can we see a saturation regime with this data? If so, this dataset may be a valuable and large addition to the available sources!
+6. (Longer term) extend this sample with rotation periods from K2!&lt;/p&gt;
 </content>
  </entry>
  
