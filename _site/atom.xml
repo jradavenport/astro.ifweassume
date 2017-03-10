@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-03-09T16:55:50-08:00</updated>
+ <updated>2017-03-09T16:58:25-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -25,7 +25,7 @@
 
 &lt;p&gt;However this idea is much simpler, and driven by the SETI question: Do any transits fail to show up when we’d expect them to?&lt;/p&gt;
 
-&lt;p&gt;##Game plan:&lt;/p&gt;
+&lt;h2 id=&quot;game-plan&quot;&gt;Game plan:&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Get list of all available transiting planets in Kepler &lt;em&gt;without&lt;/em&gt; transit timing variations (TTVs)&lt;/li&gt;
