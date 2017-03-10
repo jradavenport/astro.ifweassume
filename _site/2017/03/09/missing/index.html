@@ -11,7 +11,7 @@
 
   <title>
     
-      Project Dust Storm &middot; astro.ifweassume
+      Missing Transits in Kepler &middot; astro.ifweassume
     
   </title>
 
@@ -105,45 +105,31 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Project Dust Storm</h1>
-  <span class="post-date">13 Dec 2015</span>
-  <p>Can we observe dust moving? In other words, can we see the proper motions of the ISM? It <em>should</em> be moving around relative to us. There is some known about the shell of ISM around the Sun, but mystery remains about the small-scale structure of the ISM throughout the Milky Way.</p>
+  <h1 class="post-title">Missing Transits in Kepler</h1>
+  <span class="post-date">09 Mar 2017</span>
+  <p>One of the more amusing SETI articles in recent memory is one suggesting lasers could be used to <a href="https://arxiv.org/abs/1603.08928">“cloak” a planet’s transit</a>, by essentially filling in the missing starlight occulted by the planet. This raises an interesting observable question: <strong>Do we ever see transits go missing?</strong></p>
 
-<p>There are 2 ways to approach this problem:</p>
+<p>There have been <a href="http://keplerlightcurves.blogspot.com/2012/09/kic-10319590-disappearing-eclipsing.html">examples of eclipses</a> (i.e. two stars) changing depths over the course of the Kepler mission. These are neat, and usually attributed to the viewing angle of the system changing.</p>
 
-<h3 id="direct-observation">1. Direct observation</h3>
+<p>Transit Timing Variations (TTVs) are all the rage, as the slow drift/change of transit occurrence times points to additional planets/bodies in the system. What you observe is a periodic transit event slowly falling ahead/behind schedule as the 3rd body moves around it.</p>
 
-<ul>
-  <li>requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps</li>
-  <li>most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.</li>
-  <li>most IR surveys do not have the required resolution, but future missions would</li>
-  <li>radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM</li>
-  <li>gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM</li>
-</ul>
+<p>However this idea is much simpler, and driven by the SETI question: Do any transits fail to show up when we’d expect them to?</p>
 
-<h3 id="variations-of-extinction-eb-v">2. Variations of extinction, E(B-V)</h3>
+<p>##Game plan:</p>
 
 <ul>
-  <li>probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving</li>
-  <li>gives less specific detail on the motions of the ISM relative to the Sun</li>
-  <li>does give info on the density structure of the ISM on potentially very small scales</li>
-  <li>people have started to compare dust extinction maps, e.g. <a href="http://arxiv.org/abs/1409.2495">Planck vs WISE</a> which may be a way forward</li>
+  <li>Get list of all available transiting planets in Kepler <em>without</em> transit timing variations (TTVs)</li>
+  <li>Obtain long cadence (30-min) light curves for each system</li>
+  <li>Using published periods &amp; times for transits, step through light curve and verify transit is present <strong>if</strong> data is available (i.e. missing data doesn’t count)</li>
 </ul>
+
+<p>On some level this is a “reality check” exercise. I would basically not expect to find any published planets to have missing transits, as I think this would cause undue scatter in the phase-folded data that would have led to their rejection. However given the entertaining SETI angle, <em>it does seem worth it to at least check!</em></p>
 
 </div>
 
 <!-- <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="http://astro.ifweassume.com/2017/03/09/missing/">
-            Missing Transits in Kepler
-            <small>09 Mar 2017</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -159,6 +145,15 @@
           <a href="http://astro.ifweassume.com/2017/02/25/occult/">
             Lunar Occultations of K2 Stars
             <small>25 Feb 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="http://astro.ifweassume.com/2017/02/24/EB-LMC/">
+            Distribution of Eclipsing Binaries in the SMC and LMC
+            <small>24 Feb 2017</small>
           </a>
         </h3>
       </li>

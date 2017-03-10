@@ -108,6 +108,40 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="http://astro.ifweassume.com//2015/12/13/duststorm/">
+        Project Dust Storm
+      </a>
+    </h1>
+
+    <span class="post-date">13 Dec 2015</span>
+
+    <p>Can we observe dust moving? In other words, can we see the proper motions of the ISM? It <em>should</em> be moving around relative to us. There is some known about the shell of ISM around the Sun, but mystery remains about the small-scale structure of the ISM throughout the Milky Way.</p>
+
+<p>There are 2 ways to approach this problem:</p>
+
+<h3 id="direct-observation">1. Direct observation</h3>
+
+<ul>
+  <li>requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps</li>
+  <li>most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.</li>
+  <li>most IR surveys do not have the required resolution, but future missions would</li>
+  <li>radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM</li>
+  <li>gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM</li>
+</ul>
+
+<h3 id="variations-of-extinction-eb-v">2. Variations of extinction, E(B-V)</h3>
+
+<ul>
+  <li>probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving</li>
+  <li>gives less specific detail on the motions of the ISM relative to the Sun</li>
+  <li>does give info on the density structure of the ISM on potentially very small scales</li>
+  <li>people have started to compare dust extinction maps, e.g. <a href="http://arxiv.org/abs/1409.2495">Planck vs WISE</a> which may be a way forward</li>
+</ul>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="http://astro.ifweassume.com//2015/12/04/hackidea2016/">
         Hack Day Idea - Kepler FFI's
       </a>
@@ -169,29 +203,6 @@ It would be nice to have a definitive “Catalog of Variable Stars in M67” bas
 </ul>
 
 <p>Seems like a great hack-day idea too, doing really crappy forward or Monte Carlo model of what you should see, taking in best guesses for everything</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="http://astro.ifweassume.com//2015/11/14/diffrot-ml/">
-        Recover Differential Rotation using ML?
-      </a>
-    </h1>
-
-    <span class="post-date">14 Nov 2015</span>
-
-    <p>We showed in Aigrain et al. (2015) that, so far, nobody has an accurate way to recover differential rotation from simulated light curves.</p>
-
-<p>The most promising approaches revolved around studying the power spectrum or periodogram. The main peak (due to rotation) would be broadened or split.</p>
-
-<p>However, this signature can also be caused by starspot decay and evolution, or the appearance of many spots, even without any differential rotation in our model (alpha).</p>
-
-<p>I hypothesized that the periodogram peak structure might be able to recover some type of combined parameter that includes many of these degenerate stellar properties. Perhaps this would be enough information to be useful to theorists?</p>
-
-<p>My attempts to find such a “starspot evolution parameter” based on the peak broadening in the periodogram has not shown any correlation with simulated properties from the Aigrain model light curves. I also tried a simple Random Forest regression of the peak width (and width relative to the period) versus every simulated property for all 1000 light curves. Nada</p>
-
-<p>So the question/idea is: can we invert the problem, do machine learning on the power spectrum or periodogram itself to try and learn what the features of interest are? A giant amount of simulated light curves (even just using a super crappy evolving sine-curve code) would be helpful to tease out results….</p>
 
   </div>
   

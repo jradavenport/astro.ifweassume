@@ -4,13 +4,38 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-03-06T12:12:57-08:00</updated>
+ <updated>2017-03-09T16:55:50-08:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
    <!-- <email></email> -->
  </author>
 
+ 
+ <entry>
+   <title>Missing Transits in Kepler</title>
+   <link href="http://astro.ifweassume.com/2017/03/09/missing/"/>
+   <updated>2017-03-09T00:00:00-08:00</updated>
+   <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2017/03/09/missing</id>
+   <content type="html">&lt;p&gt;One of the more amusing SETI articles in recent memory is one suggesting lasers could be used to &lt;a href=&quot;https://arxiv.org/abs/1603.08928&quot;&gt;“cloak” a planet’s transit&lt;/a&gt;, by essentially filling in the missing starlight occulted by the planet. This raises an interesting observable question: &lt;strong&gt;Do we ever see transits go missing?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There have been &lt;a href=&quot;http://keplerlightcurves.blogspot.com/2012/09/kic-10319590-disappearing-eclipsing.html&quot;&gt;examples of eclipses&lt;/a&gt; (i.e. two stars) changing depths over the course of the Kepler mission. These are neat, and usually attributed to the viewing angle of the system changing.&lt;/p&gt;
+
+&lt;p&gt;Transit Timing Variations (TTVs) are all the rage, as the slow drift/change of transit occurrence times points to additional planets/bodies in the system. What you observe is a periodic transit event slowly falling ahead/behind schedule as the 3rd body moves around it.&lt;/p&gt;
+
+&lt;p&gt;However this idea is much simpler, and driven by the SETI question: Do any transits fail to show up when we’d expect them to?&lt;/p&gt;
+
+&lt;p&gt;##Game plan:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Get list of all available transiting planets in Kepler &lt;em&gt;without&lt;/em&gt; transit timing variations (TTVs)&lt;/li&gt;
+  &lt;li&gt;Obtain long cadence (30-min) light curves for each system&lt;/li&gt;
+  &lt;li&gt;Using published periods &amp;amp; times for transits, step through light curve and verify transit is present &lt;strong&gt;if&lt;/strong&gt; data is available (i.e. missing data doesn’t count)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On some level this is a “reality check” exercise. I would basically not expect to find any published planets to have missing transits, as I think this would cause undue scatter in the phase-folded data that would have led to their rejection. However given the entertaining SETI angle, &lt;em&gt;it does seem worth it to at least check!&lt;/em&gt;&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Stellar activity with GALEX</title>
