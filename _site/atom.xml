@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-04-03T16:10:38-07:00</updated>
+ <updated>2017-04-03T16:14:00-07:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -25,7 +25,7 @@
 
 &lt;p&gt;What comes out of this figure is a potentially useful result: you can measure the metallicity of a star (roughly) using it’s WISE (W1-W2) color!&lt;/p&gt;
 
-&lt;p&gt;For M dwarfs, the [Fe/H] values can be determined by subtracting the measured (W1-W2) color from the &lt;a href=&quot;https://arxiv.org/abs/1403.1875&quot;&gt;stellar locus&lt;/a&gt; value for a given (r-z) color. This is a fairly small amplitude signal, however, with the offset in (W1-W2) having a max of +/-0.1 mag. The effect is less pronounced for earlier type stars (G-K) measured by SDSS, but is still in the same direction about the locus.&lt;/p&gt;
+&lt;p&gt;For M dwarfs, the [Fe/H] values can be determined by subtracting the measured (W1-W2) color from the &lt;a href=&quot;https://arxiv.org/abs/1403.1875&quot;&gt;stellar locus&lt;/a&gt; value for a given (r-z) color. This is a fairly small amplitude signal, however, with the offset in (W1-W2) having a max of +/-0.1 mag. The effect is less pronounced for earlier type stars (GK) measured by SDSS, but is still in the same direction about the locus.&lt;/p&gt;
 
 &lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
 &lt;ul&gt;
@@ -40,7 +40,7 @@
       &lt;li&gt;(W1-W2) appears to broaden through M dwarfs. Does it continue?&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Is the signal at all measurable for earlier type (G,K) stars?&lt;/li&gt;
+  &lt;li&gt;Is the signal at all measurable for earlier type (GK) stars?&lt;/li&gt;
   &lt;li&gt;Fit a 3D polynomial to parameterize&lt;/li&gt;
   &lt;li&gt;Redo as function of (J-W1) instead of (r-z)
     &lt;ul&gt;
@@ -54,7 +54,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;What I need: People who know more about the current state of the field for “chemical cartography” of our Milky Way. Is it still exciting to measure [Fe/H] gradients? Look for kinematic+chemical substructure?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What I need:&lt;/strong&gt; People who know more about the current state of the field for “chemical cartography” of our Milky Way. Is it still exciting to measure [Fe/H] gradients? Look for kinematic+chemical substructure?&lt;/p&gt;
 </content>
  </entry>
  
