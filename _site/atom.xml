@@ -4,13 +4,59 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-03-10T16:08:29-08:00</updated>
+ <updated>2017-04-03T16:10:38-07:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
    <!-- <email></email> -->
  </author>
 
+ 
+ <entry>
+   <title>Photometric Metallicities</title>
+   <link href="http://astro.ifweassume.com/2017/04/03/feh/"/>
+   <updated>2017-04-03T00:00:00-07:00</updated>
+   <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2017/04/03/feh</id>
+   <content type="html">&lt;p&gt;Here is a cool figure that I made with &lt;a href=&quot;http://www.sarahjaneschmidt.com&quot;&gt;S. J. Schmidt&lt;/a&gt; a few years ago, based on work she was doing with &lt;a href=&quot;http://www.sdss3.org/surveys/apogee.php&quot;&gt;APOGEE&lt;/a&gt; + &lt;a href=&quot;https://www.nasa.gov/mission_pages/WISE/main/index.html&quot;&gt;WISE&lt;/a&gt; data for low-mass stars (see very relevant paper &lt;a href=&quot;http://adsabs.harvard.edu/abs/2016MNRAS.460.2611S&quot;&gt;here&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://astro.ifweassume.com/assets/w1w2_rz_feh.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We added to her APOGEE work by including dwarf stars processed by the SDSS Stellar Parameter Pipeline (SSPP).&lt;/p&gt;
+
+&lt;p&gt;What comes out of this figure is a potentially useful result: you can measure the metallicity of a star (roughly) using it’s WISE (W1-W2) color!&lt;/p&gt;
+
+&lt;p&gt;For M dwarfs, the [Fe/H] values can be determined by subtracting the measured (W1-W2) color from the &lt;a href=&quot;https://arxiv.org/abs/1403.1875&quot;&gt;stellar locus&lt;/a&gt; value for a given (r-z) color. This is a fairly small amplitude signal, however, with the offset in (W1-W2) having a max of +/-0.1 mag. The effect is less pronounced for earlier type stars (G-K) measured by SDSS, but is still in the same direction about the locus.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;What is the cause of this signal?
+    &lt;ul&gt;
+      &lt;li&gt;molecular features that show up for cool stars and are metallicity dependent I guess&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;If we update the sample w/ latest public data from SDSS (BOSS) and APOGEE, is the signal still there?&lt;/li&gt;
+  &lt;li&gt;Can we find more &lt;a href=&quot;https://arxiv.org/abs/1410.0014&quot;&gt;cool dwarfs&lt;/a&gt; in APOGEE? (&amp;gt;M4)
+    &lt;ul&gt;
+      &lt;li&gt;(W1-W2) appears to broaden through M dwarfs. Does it continue?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Is the signal at all measurable for earlier type (G,K) stars?&lt;/li&gt;
+  &lt;li&gt;Fit a 3D polynomial to parameterize&lt;/li&gt;
+  &lt;li&gt;Redo as function of (J-W1) instead of (r-z)
+    &lt;ul&gt;
+      &lt;li&gt;then doesn’t depend on SDSS photometry, can be done for &lt;em&gt;all WISE stars&lt;/em&gt;!&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;[Fe/H] map of nearby Milky Way?
+    &lt;ul&gt;
+      &lt;li&gt;use Gaia to pick only dwarfs&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What I need: People who know more about the current state of the field for “chemical cartography” of our Milky Way. Is it still exciting to measure [Fe/H] gradients? Look for kinematic+chemical substructure?&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Missing Transits in Kepler</title>
@@ -69,13 +115,15 @@
 
 &lt;p&gt;For stars with a small range of temperatures, we can see the NUV flux appears to decrease compared to the V-band as a function of rotation period. Here I use the NUV-V color, as it is distance independent, and small bins in temperature to minimize the effect of different stars inhabiting different ranges of rotation period causing artificial spreads in the color. The evolution of less UV activity with increasing age (rotation period) is in the direction that is expected. However, the scatter is quite large.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Next Steps&lt;/strong&gt;
-1. Improve sample selection with quality cuts for all data.
-2. Make similar plot for all available temperature bins
-3. Make plot as a function of Rossby number instead of rotation period
-4. Using a gyrochronology relation to infer rotation ages, plot the &lt;em&gt;expected&lt;/em&gt; UV flux (or NUV-V color) from the fits of Shkolnik &amp;amp; Barman (2014) versus the GALEX data.
-5. Can we see a saturation regime with this data? If so, this dataset may be a valuable and large addition to the available sources!
-6. (Longer term) extend this sample with rotation periods from K2!&lt;/p&gt;
+&lt;h2 id=&quot;next-steps&quot;&gt;Next Steps&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Improve sample selection with quality cuts for all data.&lt;/li&gt;
+  &lt;li&gt;Make similar plot for all available temperature bins&lt;/li&gt;
+  &lt;li&gt;Make plot as a function of Rossby number instead of rotation period&lt;/li&gt;
+  &lt;li&gt;Using a gyrochronology relation to infer rotation ages, plot the &lt;em&gt;expected&lt;/em&gt; UV flux (or NUV-V color) from the fits of Shkolnik &amp;amp; Barman (2014) versus the GALEX data.&lt;/li&gt;
+  &lt;li&gt;Can we see a saturation regime with this data? If so, this dataset may be a valuable and large addition to the available sources!&lt;/li&gt;
+  &lt;li&gt;(Longer term) extend this sample with rotation periods from K2!&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/jradavenport/GALEX_rot/blob/master/explore.ipynb&quot;&gt;Python notebook on Github&lt;/a&gt;&lt;/p&gt;
 </content>
