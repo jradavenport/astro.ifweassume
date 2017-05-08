@@ -9,7 +9,7 @@ tagline:             ''
 description:         'A place for ideas, ramblings, and notes on things astronomical'
 url:                 http://astro.ifweassume.com
 baseurl:            'http://astro.ifweassume.com'
-paginate:            3
+paginate:            5
 
 # About/contact
 author:
