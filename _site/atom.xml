@@ -4,7 +4,7 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-05-08T16:08:12-07:00</updated>
+ <updated>2017-06-01T10:48:29-07:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
@@ -181,9 +181,11 @@
 
 &lt;p&gt;With such a large sample, and near complete coverage of SMC/LMC (and in-between….) it would be amazing to see: &lt;strong&gt;are there variations of the eclipsing binary star population over an entire galaxy?&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;To do so, you might combine this variability survey with other spatial surveys that have traced the &lt;a href=&quot;https://arxiv.org/abs/0908.1422&quot;&gt;star formation history&lt;/a&gt; of the LMC/SMC… here’s a more &lt;a href=&quot;https://arxiv.org/abs/1501.05347&quot;&gt;recent paper&lt;/a&gt; on the subject!&lt;/p&gt;
+&lt;p&gt;To do so, you might combine this variability survey with other spatial surveys that have traced the &lt;a href=&quot;https://arxiv.org/abs/0908.1422&quot;&gt;star formation history&lt;/a&gt; of the LMC/SMC… here’s a more &lt;a href=&quot;https://arxiv.org/abs/1501.05347&quot;&gt;recent paper&lt;/a&gt; on the subject.&lt;/p&gt;
 
 &lt;p&gt;We (or at least I) might naively expect that the orbital period distribution would be changed as a function of mean age of the stars in a spatial bin - in other words, dynamic processing would harden (shorten) the periods over time. Long period, detached systems would become more rare over time, and so also increasing the fraction of W UMa type systems.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1703.10597&quot;&gt;Here’s&lt;/a&gt; a catalog with some updated fits to the light curves for the OGLE-III LMC systems.&lt;/p&gt;
 
 &lt;p&gt;Finally, working in the temporal-spatial domain is good practice for the forthcoming “LSST era”. As they say, publish early, publish often!&lt;/p&gt;
 </content>
