@@ -4,13 +4,50 @@
  <title>astro.ifweassume</title>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/atom.xml" rel="self"/>
  <link href="http://astro.ifweassume.comhttp://astro.ifweassume.com/"/>
- <updated>2017-06-01T10:48:29-07:00</updated>
+ <updated>2017-09-20T16:09:09-07:00</updated>
  <id>http://astro.ifweassume.com</id>
  <author>
    <name>James R. A. Davenport</name>
    <!-- <email></email> -->
  </author>
 
+ 
+ <entry>
+   <title>Stellar Rotation in K2</title>
+   <link href="http://astro.ifweassume.com/2017/09/20/k2rot/"/>
+   <updated>2017-09-20T00:00:00-07:00</updated>
+   <id>http://astro.ifweassume.comhttp://astro.ifweassume.com/2017/09/20/k2rot</id>
+   <content type="html">&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;/h2&gt;
+
+&lt;p&gt;Kepler measured lots of rotation periods. Differential rotation was… harder. Or maybe impossible in many cases.&lt;/p&gt;
+
+&lt;h2 id=&quot;in-walks-gaia&quot;&gt;In walks Gaia&lt;/h2&gt;
+
+&lt;p&gt;wrote short paper last year on rotation Kepler, using Gaia to filter our subgiants, find period bimodality&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://astro.ifweassume.com/assets/fig3_mod.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;time to extend this to K2. have NASA-ADAP grant to study this with Ruth, need students!&lt;/p&gt;
+
+&lt;h2 id=&quot;fun-avenues&quot;&gt;Fun Avenues&lt;/h2&gt;
+
+&lt;p&gt;this project isn’t just about the nuts &amp;amp; bolts of measuring rotation, though that is a neat project in of itself.&lt;/p&gt;
+
+&lt;p&gt;calibrate gyrochronology&lt;/p&gt;
+
+&lt;p&gt;define 3d structure/extent of the period bimodality&lt;/p&gt;
+
+&lt;p&gt;star formation history, how localized/coherent it can be. Compare to SFH in M31 from HST!&lt;/p&gt;
+
+&lt;p&gt;look for influence of spiral arm passage?&lt;/p&gt;
+
+&lt;p&gt;look for substructure in the 5-D space of (X,Y,Z, Color, Period)&lt;/p&gt;
+
+&lt;p&gt;rotation versus OTHER THINGS, like metallicity, planet(s), age…&lt;/p&gt;
+
+&lt;p&gt;rotation &lt;em&gt;off&lt;/em&gt; the main sequence (e.g. Subgiant evolution, binaries, blue stragglers?)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Photometric Metallicities</title>
