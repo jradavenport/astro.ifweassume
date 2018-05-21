@@ -127,27 +127,35 @@ It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
 
 <p>Here are some actual approaches I have come up with that we might pursue, roughly in order of ease of implementation. This list should be viewed as perpetually in-prep.</p>
 
-<p>1) alerts from the stars within the “restricted Earth Transit Zone (<a href="http://adsabs.harvard.edu/abs/2016AsBio..16..259H">Heller &amp; Pudritz 2016</a>)
-	- anytime we can see them w/ ZTF
-	- especially at our opposition (i.e. when <em>we</em> appear to transit)</p>
+<p>1) alerts from the stars within the “restricted Earth Transit Zone (<a href="http://adsabs.harvard.edu/abs/2016AsBio..16..259H">Heller &amp; Pudritz 2016</a>)</p>
+<ul>
+  <li>anytime we can see them w/ ZTF</li>
+  <li>especially at our opposition (i.e. when <em>we</em> appear to transit)</li>
+</ul>
 
 <p>2) alerts from known exoplanet host systems</p>
 <ul>
   <li>use an existing archive of exoplanets, like <a href="https://exoplanetarchive.ipac.caltech.edu">this</a> or <a href="http://exoplanets.org">this</a></li>
 </ul>
 
-<p>3) alerts coinciding with any known transit conjunction (mid-transit)
-	- allow some tolerance window to account for TTVs</p>
+<p>3) alerts coinciding with any known transit conjunction (mid-transit)</p>
+<ul>
+  <li>allow some tolerance window to account for TTVs</li>
+</ul>
 
-<p>4) VASCO-type events, stars appearing or disappearing.
-	- Esp. stars appearing that do not have a Gaia DR2 detection, for example.
-	- stars disappearing will be very interesting</p>
+<p>4) VASCO-type events, stars appearing or disappearing.</p>
+<ul>
+  <li>Esp. stars appearing that do not have a Gaia DR2 detection, for example.</li>
+  <li>stars disappearing will be very interesting</li>
+</ul>
 
-<p>5) event (alert?) coordination/synchronization (e.g. see <a href="http://adsabs.harvard.edu/abs/1977SvA....21..251M">Makovetskii 1977</a>, <a href="http://adsabs.harvard.edu/abs/2004IAUS..213..409S">Shostak 2004</a>)
-        - especially the SETI ellipsoid, a’la SN1987A (<a href="http://adsabs.harvard.edu/abs/1994Ap%26SS.214..209L">Lemarchand 1994</a>)
-        - could use galactic novae to provide time/place
-        - list of <a href="https://asd.gsfc.nasa.gov/Koji.Mukai/novae/novae.html">new Novae</a>
-        - <a href="http://www.cbat.eps.harvard.edu/nova_list.html">historic Novae</a> (till 2010)</p>
+<p>5) event (alert?) coordination/synchronization (e.g. see <a href="http://adsabs.harvard.edu/abs/1977SvA....21..251M">Makovetskii 1977</a>, <a href="http://adsabs.harvard.edu/abs/2004IAUS..213..409S">Shostak 2004</a>)</p>
+<ul>
+  <li>especially the SETI ellipsoid, a’la SN1987A (<a href="http://adsabs.harvard.edu/abs/1994Ap%26SS.214..209L">Lemarchand 1994</a>)</li>
+  <li>could use galactic novae to provide time/place</li>
+  <li>list of <a href="https://asd.gsfc.nasa.gov/Koji.Mukai/novae/novae.html">new Novae</a></li>
+  <li><a href="http://www.cbat.eps.harvard.edu/nova_list.html">historic Novae</a> (till 2010)</li>
+</ul>
 
   </div>
   
@@ -170,7 +178,7 @@ It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
 
 <p>wrote <a href="http://adsabs.harvard.edu/abs/2016arXiv161008563D">short paper</a> last year on rotation Kepler, using Gaia to filter our subgiants, find period bimodality extends from M dwarfs all the way to G dwarfs.</p>
 
-<p><img src="http://astro.ifweassume.com/assets/fig3_mod.jpg" alt="" /></p>
+<p><img src="http://localhost:4000/assets/fig3_mod.jpg" alt="" /></p>
 
 <p>time to extend this to K2, search stars of more ages/masses. have NASA-ADAP grant to study this with Ruth, need students!</p>
 
@@ -201,7 +209,7 @@ It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
 
     <p>Here is a cool figure that I made with <a href="http://www.sarahjaneschmidt.com">S. J. Schmidt</a> a few years ago at a research <a href="https://www.instagram.com/p/xvLZM1lCMc/">retreat in beautiful Friday Harbor</a>, based on work she was doing with <a href="http://www.sdss3.org/surveys/apogee.php">APOGEE</a> + <a href="https://www.nasa.gov/mission_pages/WISE/main/index.html">WISE</a> data for low-mass stars (see very relevant paper <a href="http://adsabs.harvard.edu/abs/2016MNRAS.460.2611S">here</a>)</p>
 
-<p><img src="http://astro.ifweassume.com/assets/w1w2_rz_feh.png" alt="" /></p>
+<p><img src="http://localhost:4000/assets/w1w2_rz_feh.png" alt="" /></p>
 
 <p>We added to her APOGEE work by including dwarf stars processed by the SDSS Stellar Parameter Pipeline (SSPP).</p>
 
@@ -286,7 +294,7 @@ It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
 <p><strong>Note:</strong> <em>After corresponding with the gPhoton folks, it seems this may be a less efficient approach, and that an SQL-style database is also available for visit-level data that may suffice. Comparison of gPhoton with this coarser data is required!</em></p>
 
 <p>Here is the decade long light curve for one star, chosen to have the largest number of visits available (over 70). Each data point is the median flux value within the visit. The evolution is very interesting!
-<img src="http://astro.ifweassume.com/assets/HD_3765.png" alt="" /></p>
+<img src="http://localhost:4000/assets/HD_3765.png" alt="" /></p>
 
 <p><strong>Next Steps</strong></p>
 <ol>
@@ -303,7 +311,7 @@ It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
 
 <p>Instead of gPhoton, I used a dedicated dataset built from GALEX observations of the Kepler field by <a href="http://adsabs.harvard.edu/abs/2015ApJ...813..100O">Olmedo et al. (2015)</a>. Using the excellent CDS X Match Service, I quickly and effortlessly matched this catalog to the <a href="http://adsabs.harvard.edu/abs/2014ApJS..211...24M">McQuillan et al. (2014)</a> rotation period dataset. To get more photometry, I then matched <em>this</em> combined catalog to SIMBAD with X Match. In a matter of 30 minutes from the airport I was able to get the data to make this figure:</p>
 
-<p><img src="http://astro.ifweassume.com/assets/galex_rot_test2.png" alt="" /></p>
+<p><img src="http://localhost:4000/assets/galex_rot_test2.png" alt="" /></p>
 
 <p>For stars with a small range of temperatures, we can see the NUV flux appears to decrease compared to the V-band as a function of rotation period. Here I use the NUV-V color, as it is distance independent, and small bins in temperature to minimize the effect of different stars inhabiting different ranges of rotation period causing artificial spreads in the color. The evolution of less UV activity with increasing age (rotation period) is in the direction that is expected. However, the scatter is quite large.</p>
 
