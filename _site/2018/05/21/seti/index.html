@@ -11,7 +11,7 @@
 
   <title>
     
-      Distribution of Eclipsing Binaries in the SMC and LMC &middot; astro.ifweassume
+      SETI with ZTF &middot; astro.ifweassume
     
   </title>
 
@@ -93,34 +93,53 @@
 
       <div class="container content">
         <div class="post">
-  <h1 class="post-title">Distribution of Eclipsing Binaries in the SMC and LMC</h1>
-  <span class="post-date">24 Feb 2017</span>
-  <p>There are some <em>awesome</em> surveys of variability that are being under utilized. One such gem is OGLE, which now has a <a href="https://arxiv.org/abs/1612.06394">catalog of over 48k</a> eclipsing binary star systems in the SMC and LMC!</p>
+  <h1 class="post-title">SETI with ZTF</h1>
+  <span class="post-date">21 May 2018</span>
+  <h2 id="intro">Intro</h2>
 
-<p>With such a large sample, and near complete coverage of SMC/LMC (and in-between….) it would be amazing to see: <strong>are there variations of the eclipsing binary star population over an entire galaxy?</strong></p>
+<p><a href="https://speakerdeck.com/jradavenport/seti-with-ztf-and-lsst">These slides</a> given (remotely) to the <a href="https://vasconsite.wordpress.com">VASCO</a> workshop in early 2018</p>
 
-<p>To do so, you might combine this variability survey with other spatial surveys that have traced the <a href="https://arxiv.org/abs/0908.1422">star formation history</a> of the LMC/SMC… here’s a more <a href="https://arxiv.org/abs/1501.05347">recent paper</a> on the subject.</p>
+<p>The Point (TM): ZTF (or LSST) isn’t necessarily the ideal place to do SETI work, but we get it for “free”. Might as well be looking!
+It could be a critical piece of the ZTF/LSST - Astrobiology connection.</p>
 
-<p>We (or at least I) might naively expect that the orbital period distribution would be changed as a function of mean age of the stars in a spatial bin - in other words, dynamic processing would harden (shorten) the periods over time. Long period, detached systems would become more rare over time, and so also increasing the fraction of W UMa type systems.</p>
+<h2 id="ztf-is-online">ZTF is Online</h2>
+<p>data streams are rolling now, we should put in alert trigger thingys.</p>
 
-<p><a href="https://arxiv.org/abs/1703.10597">Here’s</a> a catalog with some updated fits to the light curves for the OGLE-III LMC systems.</p>
+<p>lightcurves will come. do batch analysis later</p>
 
-<p>Finally, working in the temporal-spatial domain is good practice for the forthcoming “LSST era”. As they say, publish early, publish often!</p>
+<h2 id="search-methods">Search Methods</h2>
+
+<p>Here are some actual approaches I have come up with that we might pursue, roughly in order of ease of implementation. This list should be viewed as perpetually in-prep.</p>
+
+<p>1) alerts from the stars within the “restricted Earth Transit Zone (<a href="http://adsabs.harvard.edu/abs/2016AsBio..16..259H">Heller &amp; Pudritz 2016</a>)
+	- anytime we can see them w/ ZTF
+	- especially at our opposition (i.e. when <em>we</em> appear to transit)
+2) alerts from known exoplanet host systems</p>
+<ul>
+  <li>use an existing archive of exoplanets, like <a href="https://exoplanetarchive.ipac.caltech.edu">this</a> or <a href="http://exoplanets.org">this</a>
+3) alerts coinciding with any known transit conjunction (mid-transit)
+    <ul>
+      <li>allow some tolerance window to account for TTVs
+4) VASCO-type events, stars appearing or disappearing.</li>
+      <li>Esp. stars appearing that do not have a Gaia DR2 detection, for example.</li>
+      <li>stars disappearing will be very interesting
+5) event (alert?) coordination/synchronization (e.g. see <a href="http://adsabs.harvard.edu/abs/1977SvA....21..251M">Makovetskii 1977</a>, <a href="http://adsabs.harvard.edu/abs/2004IAUS..213..409S">Shostak 2004</a>)
+        <ul>
+          <li>especially the SETI ellipsoid, a’la SN1987A (<a href="http://adsabs.harvard.edu/abs/1994Ap%26SS.214..209L">Lemarchand 1994</a>)</li>
+          <li>could use galactic novae to provide time/place</li>
+          <li>https://asd.gsfc.nasa.gov/Koji.Mukai/novae/novae.html (new Novae)</li>
+          <li>http://www.cbat.eps.harvard.edu/nova_list.html historic Novae (till 2010)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
 </div>
 
 <!-- <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="http://astro.ifweassume.com/2018/05/21/seti/">
-            SETI with ZTF
-            <small>21 May 2018</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -136,6 +155,15 @@
           <a href="http://astro.ifweassume.com/2017/04/03/feh/">
             Photometric Metallicities
             <small>03 Apr 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="http://astro.ifweassume.com/2017/03/09/missing/">
+            Missing Transits in Kepler
+            <small>09 Mar 2017</small>
           </a>
         </h3>
       </li>
