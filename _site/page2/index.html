@@ -104,6 +104,58 @@
   
   <div class="post">
     <h1 class="post-title">
+      <a href="http://astro.ifweassume.com//2017/03/06/galex/">
+        Stellar activity with GALEX
+      </a>
+    </h1>
+
+    <span class="post-date">06 Mar 2017</span>
+
+    <p>At the <a href="http://www.issibern.ch/teams/quasistellflare/">ISSI meeting</a> I attended on quasi-periodic pulsations (QPP’s) in stellar flares in Switzerland in 2017-March, we had a great demo of the time-tagged photon data from GALEX by Scott Flemming &amp; Rachel Osten, and the Python toolkit called <a href="https://github.com/cmillion/gPhoton">gPhoton</a>. This enables high time resolution (maybe 1sec) studies of stellar variability in the NUV (and FUV). Many projects came to mind from our group with this tool/dataset, including searching for QPP’s naturally.</p>
+
+<h2 id="long-term-variability">Long-Term Variability</h2>
+<p>Some sources available with gPhoton have data from up to 10 years of repeated visits with GALEX! This caused me to wonder about the possibility of seeing long time-scale variability in the UV, which we might use to observe stellar activity cycles using GALEX! By using a list of Mt. Wilson H&amp;K stars from <a href="http://adsabs.harvard.edu/abs/1991ApJS...76..383D">Duncan et al. (1991)</a>, I wrote a quick Python script to ping the gPhoton database and count how many visits to each star were available.</p>
+
+<p><strong>Note:</strong> <em>After corresponding with the gPhoton folks, it seems this may be a less efficient approach, and that an SQL-style database is also available for visit-level data that may suffice. Comparison of gPhoton with this coarser data is required!</em></p>
+
+<p>Here is the decade long light curve for one star, chosen to have the largest number of visits available (over 70). Each data point is the median flux value within the visit. The evolution is very interesting!
+<img src="http://astro.ifweassume.com/assets/HD_3765.png" alt="" /></p>
+
+<p><strong>Next Steps</strong></p>
+<ol>
+  <li>Create a similar light curve for every Mt. Wilson (and other H&amp;K survey) stars, looking for long-term variations.</li>
+  <li>Compare the gPhoton with SQL-level data, to ensure variability is real</li>
+  <li>Compare with the <a href="http://adsabs.harvard.edu/abs/2013ApJ...766...60G">Gezari et al. (2013)</a> catalog of variable GALEX sources</li>
+</ol>
+
+<p><a href="https://github.com/jradavenport/GALEX_MtWilson/blob/master/tmp.ipynb">Python notebook on Github</a></p>
+
+<h2 id="age-activity">Age-Activity</h2>
+
+<p>Following my recent exploration of rotation period distributions using <a href="https://arxiv.org/abs/1610.08563">Kepler &amp; Gaia data</a>, I was keen to see if the GALEX data showed any correlation between UV flux and stellar age. Activity levels traced versus stellar age with GALEX have been explored by <a href="http://adsabs.harvard.edu/abs/2014AJ....148...64S">Shkolnik &amp; Barman (2014)</a>, using stars with known ages from clusters.</p>
+
+<p>Instead of gPhoton, I used a dedicated dataset built from GALEX observations of the Kepler field by <a href="http://adsabs.harvard.edu/abs/2015ApJ...813..100O">Olmedo et al. (2015)</a>. Using the excellent CDS X Match Service, I quickly and effortlessly matched this catalog to the <a href="http://adsabs.harvard.edu/abs/2014ApJS..211...24M">McQuillan et al. (2014)</a> rotation period dataset. To get more photometry, I then matched <em>this</em> combined catalog to SIMBAD with X Match. In a matter of 30 minutes from the airport I was able to get the data to make this figure:</p>
+
+<p><img src="http://astro.ifweassume.com/assets/galex_rot_test2.png" alt="" /></p>
+
+<p>For stars with a small range of temperatures, we can see the NUV flux appears to decrease compared to the V-band as a function of rotation period. Here I use the NUV-V color, as it is distance independent, and small bins in temperature to minimize the effect of different stars inhabiting different ranges of rotation period causing artificial spreads in the color. The evolution of less UV activity with increasing age (rotation period) is in the direction that is expected. However, the scatter is quite large.</p>
+
+<h2 id="next-steps">Next Steps</h2>
+<ol>
+  <li>Improve sample selection with quality cuts for all data.</li>
+  <li>Make similar plot for all available temperature bins</li>
+  <li>Make plot as a function of Rossby number instead of rotation period</li>
+  <li>Using a gyrochronology relation to infer rotation ages, plot the <em>expected</em> UV flux (or NUV-V color) from the fits of Shkolnik &amp; Barman (2014) versus the GALEX data.</li>
+  <li>Can we see a saturation regime with this data? If so, this dataset may be a valuable and large addition to the available sources!</li>
+  <li>(Longer term) extend this sample with rotation periods from K2!</li>
+</ol>
+
+<p><a href="https://github.com/jradavenport/GALEX_rot/blob/master/explore.ipynb">Python notebook on Github</a></p>
+
+  </div>
+  
+  <div class="post">
+    <h1 class="post-title">
       <a href="http://astro.ifweassume.com//2017/02/25/occult/">
         Lunar Occultations of K2 Stars
       </a>
@@ -111,7 +163,7 @@
 
     <span class="post-date">25 Feb 2017</span>
 
-    <p><img src="http://localhost:4000/assets/Moon_map.jpg" alt="" /></p>
+    <p><img src="http://astro.ifweassume.com/assets/Moon_map.jpg" alt="" /></p>
 
 <h2 id="background">Background</h2>
 <p>I had an epiphany in early 2016: The moon goes through the K2 fields. I mean, of course it does by construction. K2 has to point along the ecliptic due to using the solar wind as a 3rd axis stabilizer. The moon travels along ecliptic. In hindsight, it is very obvious.</p>
@@ -121,8 +173,8 @@
 <p>Such a project for community observers of occultations was described by the Occult software maker, Dave Herald, in this <a href="https://stargazerslounge.com/topic/229660-ideas-for-astro-society-project/?do=findComment&amp;comment=2479350">forum comment</a> as an idea pitched by <a href="http://www.astro.cornell.edu/~jpl/James_Lloyd">James Lloyd</a>. The banner figure above is an example occultation in May 2017 of a K2 target observable from <a href="http://www.apo.nmsu.edu">APO</a>, as computed by <a href="http://www.lunar-occultations.com/iota/occult4.htm">Occult v4.2.0</a></p>
 
 <p><a href="https://en.wikipedia.org/wiki/Occultation#Occultations_by_the_Moon">Lunar occultations</a> can be used to estimate the angular diameter of background stars. It can also be used to determine if a star is actually a binary! Check out these toy examples I coded up:
-<img src="http://localhost:4000/assets/occult1.png" alt="" />
-<img src="http://localhost:4000/assets/occult2.png" alt="" /></p>
+<img src="http://astro.ifweassume.com/assets/occult1.png" alt="" />
+<img src="http://astro.ifweassume.com/assets/occult2.png" alt="" /></p>
 
 <p>Occultations allow binaries to be detected at <a href="http://adsabs.harvard.edu/abs/2014SerAJ.188....1J">milli-arcsecond separations</a>, <em>assuming the stars are separated along the direction of occultation</em>, and can detect companions up to <a href="http://adsabs.harvard.edu/abs/2003A%26A...397.1123R">11 mag fainter</a>! This means occultations could even be used to <em>detect</em> exoplanets with next-generation large telescopes.</p>
 
@@ -219,40 +271,6 @@
 
 <p>So the idea:
 Get best “Nbody model” (see my ignorance in its raw form!) of binary star system, with moderate separations (like, 1-10 days). Add a giant planet around 1 star. Run lots of simulations for 1 Gyr</p>
-
-  </div>
-  
-  <div class="post">
-    <h1 class="post-title">
-      <a href="http://astro.ifweassume.com//2015/12/13/duststorm/">
-        Project Dust Storm
-      </a>
-    </h1>
-
-    <span class="post-date">13 Dec 2015</span>
-
-    <p>Can we observe dust moving? In other words, can we see the proper motions of the ISM? It <em>should</em> be moving around relative to us. There is some known about the shell of ISM around the Sun, but mystery remains about the small-scale structure of the ISM throughout the Milky Way.</p>
-
-<p>There are 2 ways to approach this problem:</p>
-
-<h3 id="1-direct-observation">1. Direct observation</h3>
-
-<ul>
-  <li>requires high-res molecular (radio/mm) maps over time, or high-res IR emission maps</li>
-  <li>most current maps available in literature probably not sufficient over large ares, and certainly not stable over time.</li>
-  <li>most IR surveys do not have the required resolution, but future missions would</li>
-  <li>radio/mm probably has the resolution and stability needed to directly track the motions of the near-field ISM</li>
-  <li>gives some info about density structure, but lots of info about kinematics and dynamical structure of the ISM</li>
-</ul>
-
-<h3 id="2-variations-of-extinction-eb-v">2. Variations of extinction, E(B-V)</h3>
-
-<ul>
-  <li>probably easier to detect in the blue optical, can possibly be done from large surveys determining the extinction of distant stars shining through near-field ISM that is moving</li>
-  <li>gives less specific detail on the motions of the ISM relative to the Sun</li>
-  <li>does give info on the density structure of the ISM on potentially very small scales</li>
-  <li>people have started to compare dust extinction maps, e.g. <a href="http://arxiv.org/abs/1409.2495">Planck vs WISE</a> which may be a way forward</li>
-</ul>
 
   </div>
   
